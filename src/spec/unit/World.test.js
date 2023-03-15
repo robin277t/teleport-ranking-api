@@ -1,4 +1,4 @@
-import World from "../../classes/World";
+const World = require("../../World");
 require("jest-fetch-mock").enableMocks();
 
 describe("Block 1: World class", () => {
@@ -88,8 +88,7 @@ describe("Block 1: World class", () => {
     };
     fetch.mockResponseOnce(JSON.stringify(mockApiContinent));
     await testWorldInstance.fetchContinents();
-    expect(testWorldInstance.getContinents().length).toBe(3)
-    expect(testWorldInstance.getContinents()[2].name).toEqual('North America')
+    expect(testWorldInstance.getContinents().length).toBe(3);
+    expect(testWorldInstance.getContinents()[2].name).toEqual("North America");
   });
 });
-

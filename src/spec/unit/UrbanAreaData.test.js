@@ -1,4 +1,4 @@
-import UrbanAreaData from "../../classes/UrbanAreaData";
+const UrbanAreaData = require("../../UrbanAreaData");
 require("jest-fetch-mock").enableMocks();
 
 describe("Block 3: UrbanAreaData class", () => {
@@ -177,5 +177,4 @@ describe("Block 3: UrbanAreaData class", () => {
   it("test6- getContinentId getter function works", () => {
     expect(testUrbanAreaDataInstance.getContinentId()).toEqual("geonames:AF");
   });
-
 });

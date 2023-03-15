@@ -1,4 +1,4 @@
-import Continent from "../../classes/Continent";
+const Continent = require("../../Continent");
 require("jest-fetch-mock").enableMocks();
 
 describe("Block 2: Continent class", () => {
